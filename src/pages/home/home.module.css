@@ -1,0 +1,257 @@
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 380px; /* Space between images */
+  margin-top: 50px;
+  background-color: white; /* White background for the section */
+  padding: 20px; /* Padding around the section */
+  flex-wrap: wrap;
+}
+
+.imageitem1 {
+  text-align: center;
+  flex: 1 1 300px; /* Allows flexibility and sets a minimum width */
+  max-width: 460px;
+}
+
+.img122 {
+  /* width: 460px; */
+  max-width: 100%;
+  height: 420px;
+  border: 5px solid #be8f50; /* Border around the image */
+}
+
+.ptagdesc {
+  color: black; /* Black color for the description text */
+  font-size: 16px;
+}
+
+
+
+
+.home {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.bg {
+  background-image: url("../../assets/image/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 5rem 3rem;
+}
+
+.container:first-child {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.span {
+  width: 15%;
+  height: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--primary-color);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  color: var(--light-color);
+  text-transform: capitalize;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: 1rem;
+}
+
+.container2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 5rem 3rem;
+}
+
+.box:first-child {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.box_title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.box_icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-color);
+}
+
+.box_text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--light-color);
+  width: 100%;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.cta:hover {
+  background-color: #be8f50;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--dark-color);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.contact {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 3rem;
+}
+
+.contactBG {
+  background-image: url("../../assets/image/carousel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.contactHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactTitle {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+@media (min-width: 62.5em) {
+  .container {
+    height: 100%;
+    padding: 12rem 3rem;
+  }
+
+  .container2 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem;
+  }
+
+  .box {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  .box:first-child {
+    border-bottom: none;
+  }
+}
