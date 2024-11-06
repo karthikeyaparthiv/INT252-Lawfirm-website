@@ -78,6 +78,16 @@ const Home = () => {
           <p className={style3.text}>LL.B., Senior Advocate</p>
         </section>
       </section>
+<<<<<<< HEAD
+=======
+      <section className={style.imageitem1}>
+        <img src="/images/chantiphotoblur.jpg" className={style.img122} />
+        <h3 className={style3.text}>M Venkata Ratnam</h3>
+        <p className={style3.text}>LL.B., Senior Advocate</p>
+      </section>
+    </section>
+
+>>>>>>> 553f102d236873d9b94e9b2232f9da30d0f869ee
 
       <section className={style2.container2}>
         {/* <div className={style2.box}>
