@@ -74,7 +74,7 @@ const Home = () => {
         <p className={style3.text}>LL.B., Senior Advocate</p>
       </section>
       <section className={style.imageitem1}>
-        <img src="/images/image2.png" className={style.img122} />
+        <img src="/images/chantiphotoblur.jpg" className={style.img122} />
         <h3 className={style3.text}>M Venkata Ratnam</h3>
         <p className={style3.text}>LL.B., Senior Advocate</p>
       </section>
