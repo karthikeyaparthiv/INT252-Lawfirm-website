@@ -78,37 +78,9 @@ const Home = () => {
           <p className={style3.text}>LL.B., Senior Advocate</p>
         </section>
       </section>
-<<<<<<< HEAD
-=======
-      <section className={style.imageitem1}>
-        <img src="/images/chantiphotoblur.jpg" className={style.img122} />
-        <h3 className={style3.text}>M Venkata Ratnam</h3>
-        <p className={style3.text}>LL.B., Senior Advocate</p>
-      </section>
-    </section>
-
->>>>>>> 553f102d236873d9b94e9b2232f9da30d0f869ee
 
       <section className={style2.container2}>
-        {/* <div className={style2.box}>
-          <h2 className={style2.box_title}>
-            Member of INTERNATIONAL ASSOCIATION OF LAW FIRMS
-          </h2>
-          <img src={Law} alt="Interjurist JoelCatty" />
-        </div>
-        <div className={style2.box}>
-          <h2 className={style2.box_title_2}>
-            <em>
-              <strong className={style2.strong}>
-                &quot;Ius civile vigilantibus scriptum est&quot;,
-              </strong>
-            </em>
-            <span className={style2.span}>
-              Roman Law Civil Law has been written for the watchful.
-            </span>
-          </h2>
-          <img src={home} alt="Temple" />
-        </div> */}
+       
         <div className={style2.box}>
           <h2 className={style2.box_title}>20 Years of Experience</h2>
           <img src={Scale} alt="Balance Scale" />
@@ -117,12 +89,7 @@ const Home = () => {
           <h2 className={style2.box_title}>LEGAL SERVICES</h2>
           <img src={Hammer} alt="Hammer Justice" />
         </div>
-        {/* <div className={style2.box}>
-          <h2 className={`${style2.block} ${style2.box_title}`}>
-            <strong className={style2.number}>45+</strong> Legal Associates
-          </h2>
-          <FaSuitcase className={style2.icon} />
-        </div> */}
+        
         <div className={style2.box}>
           <h2 className={style2.box_title}>Defining Success</h2>
           <FaFlagCheckered className={style2.icon} />
