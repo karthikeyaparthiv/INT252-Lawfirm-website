@@ -66,20 +66,18 @@ const Home = () => {
         </section>
       </section>
 
-
       <section className={style.imagecontainer}>
-      <section className={style.imageitem1}>
-        <img src="/images/image1.png" className={style.img122} />
-        <h3 className={style3.text}>Venu Gopal</h3>
-        <p className={style3.text}>LL.B., Senior Advocate</p>
+        <section className={style.imageitem1}>
+          <img src="/images/image1.png" className={style.img122} />
+          <h3 className={style3.text}>Venu Gopal</h3>
+          <p className={style3.text}>LL.B., Senior Advocate</p>
+        </section>
+        <section className={style.imageitem1}>
+          <img src="/images/chantiphotoblur.jpg" className={style.img122} />
+          <h3 className={style3.text}>M Venkata Ratnam</h3>
+          <p className={style3.text}>LL.B., Senior Advocate</p>
+        </section>
       </section>
-      <section className={style.imageitem1}>
-        <img src="/images/image2.png" className={style.img122} />
-        <h3 className={style3.text}>M Venkata Ratnam</h3>
-        <p className={style3.text}>LL.B., Senior Advocate</p>
-      </section>
-    </section>
-
 
       <section className={style2.container2}>
         {/* <div className={style2.box}>
@@ -129,7 +127,10 @@ const Home = () => {
           <div className={style3.box}>
             <h2 className={style3.title}>Legal Advisory</h2>
             <p className={style3.text}>
-            Our legal advisory services are designed to provide clients with reliable, well-informed guidance on a wide range of legal matters. We prioritize personalized counsel, helping clients navigate complex situations with clarity, foresight, and strategic advice.
+              Our legal advisory services are designed to provide clients with
+              reliable, well-informed guidance on a wide range of legal matters.
+              We prioritize personalized counsel, helping clients navigate
+              complex situations with clarity, foresight, and strategic advice.
             </p>
           </div>
           <img src={Legal} alt="Legal" className={style3.img} />
@@ -139,20 +140,23 @@ const Home = () => {
           <div className={style3.box}>
             <h2 className={style3.title}>Criminal Law</h2>
             <p className={style3.text}>
-            Our criminal law practice is committed to defending the rights of individuals facing criminal charges. We provide a robust defense, leveraging our experience and knowledge to secure the best possible outcomes for our clients in complex criminal cases.
+              Our criminal law practice is committed to defending the rights of
+              individuals facing criminal charges. We provide a robust defense,
+              leveraging our experience and knowledge to secure the best
+              possible outcomes for our clients in complex criminal cases.
             </p>
           </div>
-          <img
-            src={CriminalLaw}
-            alt="Criminal Law"
-            className={style3.img}
-          />
+          <img src={CriminalLaw} alt="Criminal Law" className={style3.img} />
         </div>
         <div className={style3.content}>
           <div className={style3.box}>
             <h2 className={style3.title}>Family Law</h2>
             <p className={style3.text}>
-            We handle family law cases with the utmost care and sensitivity, recognizing the personal nature of these matters. Our expertise covers divorce, custody disputes, alimony, and other family-related issues, ensuring that our clients receive compassionate support and a fair resolution.
+              We handle family law cases with the utmost care and sensitivity,
+              recognizing the personal nature of these matters. Our expertise
+              covers divorce, custody disputes, alimony, and other
+              family-related issues, ensuring that our clients receive
+              compassionate support and a fair resolution.
             </p>
           </div>
           <img src={Family} alt="Family" className={style3.img} />

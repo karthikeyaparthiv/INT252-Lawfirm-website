@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState  } from 'react';
 import { TiContacts } from "react-icons/ti";
 import { TfiTime } from "react-icons/tfi";
 import Nav from "../../layout/header/nav";
@@ -7,28 +6,40 @@ import Footer from "../../layout/footer/footer";
 import topStyle from "../about/about.module.css";
 import style from "./contact.module.css";
 import { Helmet } from "react-helmet-async";
+import axios from "axios";
 
 const Contact = () => {
 
-  const form = useRef();
 
-  const sendEmail = (e) => {
+  const [email, setEmail] = useState("");
+  const [from, setFrom] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      await axios.post("https://email-sender-lhzc.onrender.com/send-email", {
+        email,
+        from,
+        message,
+      });
+      alert("Email sent successfully");
+      
+      setEmail("");
+      setFrom("");
+      setMessage("");
+    } catch (error) {
+      alert("Error sending email");
+    }
+  };
 
-    emailjs
-      .sendForm('service_leb1ydm', 'template_ubqoi8l', form.current, {
-        publicKey: 'TTmvDyce4nMZMuETZ',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          e.target.reset();
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-    };
+
+
+
+
+ 
+
+
   return (
     <main className={topStyle.top}>
       <Helmet>
@@ -108,27 +119,30 @@ const Contact = () => {
               <h2 className={style.formTitle}>Send Us a Message</h2>
 
 
-              <form ref={form} onSubmit={sendEmail} className={style.form}>
+              <form onSubmit={handleSubmit} className={style.form}>
               <label>Name</label>
                 <input
-                  type="text" 
-                  name="user_name"
-                  placeholder="Your Name"
+                  type="text"
+                  placeholder="From"
+                  value={from}
+                  onChange={(e) => setFrom(e.target.value)}
                   required
                   className={style.input}
                 />
                 <label>Email</label>
                 <input
-                  type="email" 
-                  name="user_email"
+                  type="email"
                   placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                   className={style.input}
                 />
                 <label>Message</label>
                 <textarea
-                  name="message"
-                  placeholder="Case Description"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                   className={style.textarea} />
                 <input type="submit" value="Send" className={style.btn}/>
